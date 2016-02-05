@@ -1,0 +1,21 @@
+.upcount {
+  font-size: 35px; }
+
+.downcount {
+  font-size: 35px; }
+
+  .up-progress{
+    width: 200px;
+     }
+
+  .down-progress {
+    width: 200px;
+   }
+
+progress[value]::-webkit-progress-value::before {
+  content: "80%";
+  position: absolute;
+  right: 0;
+  top: -125%; }
+
+/*# sourceMappingURL=style.css.map */

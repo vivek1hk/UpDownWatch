@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+
+  <!-- Jquery and JS Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="./js/stopwatch.js"></script>
+  <script type="text/javascript" src="./js/jquery-1.12.0.min.js"></script>
+
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Up Down Counter</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+
+        <h4>Up-Down Timer</h4>
+        <p>Enter value in the text box below to and hit start on either of the timer. Note that keying in to the text box will reset both timers </p>
+      <p>  Enter Count limit </p>
+        <input type="text" onClick="resetAll()"class="time-val" name="clocklimit" value=""></input><br>
+      <table>
+        <tr>
+          <td>
+            <p>Up Counter<br></p><p class='upcount'> 0 Days <br> 0 Hours<br> 0 Minutes <br> 0 Seconds</p> <progress class='up-progress' value="" max="100"></progress><br>
+            <input class="up-start-button" type="button" name="Start" onClick="startClickUp()" value="Start"> </input>
+            <input class="up-stop-button"type="button" name="Stop" onClick="stopClickUp()" value="Stop"></input>
+            <input type="button" name="Reset" onClick="resetClickUp()" value="Reset"></input>
+          </td>
+
+          <td>
+            <p>Down Counter<br></p><p class='downcount'>0 Days <br> 0 Hours<br> 0 Minutes <br> 0 Seconds</p> <progress class='down-progress' value="" max="100"></progress><br>
+            <input class="down-start-button" type="button" name="Start" onClick="startClickDown()" value="Start"> </input>
+            <input class="down-stop-button" type="button" name="Stop" onClick="stopClickDown()" value="Stop"></input>
+            <input type="button" name="Reset" onClick="resetClickDown()" value="Reset"></input>
+          </td>
+        </tr>
+      </table>
+
+
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
